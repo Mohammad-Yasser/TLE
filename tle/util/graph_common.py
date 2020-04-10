@@ -5,6 +5,9 @@ import time
 
 from tle import constants
 from matplotlib import pyplot as plt
+from matplotlib import rcParams
+
+rcParams['font.family'] = 'Noto Sans CJK JP'
 
 def get_current_figure_as_file():
     filename = os.path.join(constants.TEMP_DIR, f'tempplot_{time.time()}.png')
